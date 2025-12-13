@@ -1,4 +1,4 @@
-### 🗑️ Trash Classification - Deep Learning Final Project
+# 🗑️ Trash Classification - Deep Learning Final Project
 
 ## 👨‍💼 Author
 * Richard Chrysander - 2702242972
