@@ -2,6 +2,8 @@
 # Data
 # =====================
 data/raw/
+data/*.zip
+data/dataset/
 
 # =====================
 # Outputs / Experiments

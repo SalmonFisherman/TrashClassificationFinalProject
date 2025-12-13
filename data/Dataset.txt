@@ -1,0 +1,2 @@
+Raw Dataset: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
+Preprocessed Dataset: https://drive.google.com/file/d/1FWOgqJl-rC5_ZjKeRq4ZX7rOqa3QUpaR/view?usp=sharing
