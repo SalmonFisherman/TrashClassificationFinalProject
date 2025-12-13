@@ -1,0 +1,21 @@
+Classification Report
+=====================
+
+              precision    recall  f1-score   support
+
+     battery     0.9278    0.9375    0.9326        96
+  biological     0.9271    0.9368    0.9319        95
+ brown-glass     0.8929    0.8197    0.8547        61
+   cardboard     0.8810    0.9136    0.8970        81
+     clothes     0.9652    0.9569    0.9610       116
+ green-glass     0.9130    0.8750    0.8936        72
+       metal     0.8242    0.8523    0.8380        88
+       paper     0.9118    0.8158    0.8611       114
+     plastic     0.8261    0.6628    0.7355        86
+       shoes     0.9368    0.9780    0.9570        91
+       trash     0.7206    0.9423    0.8167        52
+ white-glass     0.7683    0.8750    0.8182        72
+
+    accuracy                         0.8818      1024
+   macro avg     0.8746    0.8805    0.8748      1024
+weighted avg     0.8850    0.8818    0.8812      1024
