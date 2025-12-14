@@ -5,7 +5,7 @@ from model import build_model
 
 DATA_DIR = "data/dataset/"
 BATCH_SIZE = 64
-EPOCHS = 15
+EPOCHS = 30
 MODEL_DIR = "output/saved_model"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
@@ -25,7 +25,7 @@ model = build_model(NUM_CLASSES)
 
 # Compile
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(1e-5),
+    optimizer=tf.keras.optimizers.Adam(1e-4),
     loss="categorical_crossentropy",
     metrics=["accuracy"]
 )
@@ -35,7 +35,7 @@ model.summary()
 # Callbacks
 callbacks = [
     tf.keras.callbacks.ModelCheckpoint(
-        filepath=os.path.join(MODEL_DIR, "best_model.h5"),
+        filepath=os.path.join(MODEL_DIR, "new_best_model_3.keras"),
         monitor="val_accuracy",
         save_best_only=True
     ),
@@ -67,4 +67,4 @@ history = model.fit(
 )
 
 # Save final model
-model.save(os.path.join(MODEL_DIR, "final_model"))
+model.save(os.path.join(MODEL_DIR, "new_final_model_no_more.keras"))

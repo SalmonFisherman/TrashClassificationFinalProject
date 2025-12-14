@@ -5,7 +5,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 
 DATA_DIR = "data/dataset/"
-MODEL_PATH = "output/saved_model/final_model"
+MODEL_PATH = "output/saved_model/new_final_model_no_more.keras"
 OUTPUT_DIR = "output/saved_model"
 BATCH_SIZE = 64
 
@@ -18,7 +18,12 @@ _, _, test_ds, class_names = get_datasets(
 )
 
 # Load model
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile = False)
+
+model.compile(
+    loss="categorical_crossentropy",
+    metrics=["accuracy"]
+)
 
 # Evaluate
 loss, acc = model.evaluate(test_ds, verbose=1)

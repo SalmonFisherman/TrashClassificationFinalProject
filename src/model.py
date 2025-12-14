@@ -11,13 +11,13 @@ def build_model(num_classes, fine_tune_at=100):
     )
 
     # Freeze semua layer awal
-    base_model.trainable = True
+    base_model.trainable = False
     for layer in base_model.layers[:fine_tune_at]:
         layer.trainable = False
 
     inputs = tf.keras.Input(shape=(224, 224, 3))
 
-    x = base_model(inputs, training=True)
+    x = base_model(inputs)
     x = layers.GlobalAveragePooling2D()(x)
     x = layers.BatchNormalization()(x)
 
