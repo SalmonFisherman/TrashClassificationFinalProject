@@ -2,12 +2,14 @@ import tensorflow as tf
 import os
 from data_loader import get_datasets, get_class_weights
 from model import build_model
+import json
 
 DATA_DIR = "data/dataset/"
 BATCH_SIZE = 64
 EPOCHS = 30
 MODEL_DIR = "output/saved_model"
 os.makedirs(MODEL_DIR, exist_ok=True)
+HISTORY_PATH = os.path.join(MODEL_DIR, "history.json")
 
 # Load dataset
 train_ds, val_ds, test_ds, class_names = get_datasets(
@@ -35,7 +37,7 @@ model.summary()
 # Callbacks
 callbacks = [
     tf.keras.callbacks.ModelCheckpoint(
-        filepath=os.path.join(MODEL_DIR, "new_best_model_3.keras"),
+        filepath=os.path.join(MODEL_DIR, "CALLBACKS_MODEL.keras"),
         monitor="val_accuracy",
         save_best_only=True
     ),
@@ -66,5 +68,15 @@ history = model.fit(
     callbacks=callbacks
 )
 
+history_dict = {
+    key: [float(v) for v in values]
+    for key, values in history.history.items()
+}
+
+with open(HISTORY_PATH, "w") as f:
+    json.dump(history_dict, f, indent=4)
+
+print(f"Training history saved to: {HISTORY_PATH}")
+
 # Save final model
-model.save(os.path.join(MODEL_DIR, "new_final_model_no_more.keras"))
+model.save(os.path.join(MODEL_DIR, "FINAL_TEST_MODEL.keras"))

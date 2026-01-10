@@ -28,7 +28,7 @@ class_names = ['battery',
 IMG_SIZE = 224
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR.parent / "output" / "saved_model" / "new_final_model_no_more.keras"
+MODEL_PATH = BASE_DIR.parent / "output" / "saved_model" / "FINAL_TEST_MODEL.keras"
 
 @st.cache_resource
 def load_model(model_path):
