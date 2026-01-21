@@ -9,7 +9,7 @@
 This project focuses on trash classification using Deep Learning techniques. The goal of this project is to automatically classify images of trash into their categories, to support better waste management and recycling systems.
 
 ## 🛠️ Configuration
-All training and experiment parameters are stored in 'config/config.yaml', including:
+All training and experiment parameters are stored directly in 'train.py', including:
 
 * Batch size
 * Learning rate
@@ -26,10 +26,10 @@ Metrics:
 * Confusion Matrix
 
 ## 💽 How to Run Demo Application
-isi gimana cara run demo nya
+* Clone the Repository '''git clone'''
 
 ## 💯 Results
-Training logs, plots, and saved models are stored in 'outputs/'
+Training logs, plots, and saved models are stored in 'output/'
 
 ## 📝 Report
 The final report and presentation slides are available in 'reports/'
