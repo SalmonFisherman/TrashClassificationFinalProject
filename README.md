@@ -26,7 +26,10 @@ Metrics:
 * Confusion Matrix
 
 ## 💽 How to Run Demo Application
-* Clone the Repository '''git clone'''
+* Clone the Repository using ```bash
+  git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git```
+* Enter the project folder
+* Install dependency listed in 
 
 ## 💯 Results
 Training logs, plots, and saved models are stored in 'output/'
