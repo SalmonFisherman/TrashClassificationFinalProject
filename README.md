@@ -9,7 +9,7 @@
 This project focuses on trash classification using Deep Learning techniques. The goal of this project is to automatically classify images of trash into their categories, to support better waste management and recycling systems.
 
 ## 🛠️ Configuration
-All training and experiment parameters are stored directly in 'train.py', including:
+All training and experiment parameters are stored directly in `train.py`, including:
 
 * Batch size
 * Learning rate
@@ -26,13 +26,14 @@ Metrics:
 * Confusion Matrix
 
 ## 💽 How to Run Demo Application
-* Clone the Repository using ```bash
-  git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git```
-* Enter the project folder
-* Install dependency listed in 
+* Clone the Repository using ```git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git```
+* Open the project folder
+* Enter the app folder with `cd app`
+* Install dependency listed in `requirements.txt` with `pip install -r requirements.txt`
+* Run the application with `streamlit run app.py`
 
 ## 💯 Results
-Training logs, plots, and saved models are stored in 'output/'
+Training logs, plots, and saved models are stored in `output/`
 
 ## 📝 Report
-The final report and presentation slides are available in 'reports/'
+The final report and presentation slides are available in `reports/`
