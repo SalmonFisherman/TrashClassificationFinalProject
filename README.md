@@ -29,10 +29,10 @@ Metrics:
 
 ## 💽 How to Run Demo Application
 * Clone the Repository:
-  `git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git`
+  ```git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git```
 * Open the project folder
 * Enter the app folder:
-   `cd app`
+   ```cd app```
 * Install dependencies:
   `pip install -r requirements.txt`
 * Run the application:
