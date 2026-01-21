@@ -17,20 +17,27 @@ All training and experiment parameters are stored directly in `train.py`, includ
 * Optimizer settings
 
 ## 🖥️ Model & Approach
-* Framework: TensorFlow
-* Task: Multi-class image classification
-* Model: Pre-trained MobileNetV2
+- **Framework**: TensorFlow
+- **Task**: Multi-class image classification
+- **Model**: Pre-trained MobileNetV2
 Metrics:
 * Accuracy
-* Precision, Recall, F1-score
+* Precision
+* Recall
+* F1-score
 * Confusion Matrix
 
 ## 💽 How to Run Demo Application
-* Clone the Repository using ```git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git```
+* Clone the Repository:
+  `git clone https://github.com/SalmonFisherman/TrashClassificationFinalProject.git`
 * Open the project folder
-* Enter the app folder with `cd app`
-* Install dependency listed in `requirements.txt` with `pip install -r requirements.txt`
-* Run the application with `streamlit run app.py`
+* Enter the app folder:
+   `cd app`
+* Install dependencies:
+  `pip install -r requirements.txt`
+* Run the application:
+  `streamlit run app.py`
+* Application should have opened automatically.
 
 ## 💯 Results
 Training logs, plots, and saved models are stored in `output/`
